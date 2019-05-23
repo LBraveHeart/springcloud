@@ -19,7 +19,7 @@ public class HelloController {
     @Value("${neo.hello}")
     private String hello;
 
-    @RequestMapping()
+    @RequestMapping("/hello")
     private String hello(){
         return this.hello;
     }
