@@ -11,13 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
  * @description TODO
  * @date 2019/5/23 15:25
  **/
+
+
 @RestController
-// 当配置中心信息更改时，自动将新的配置更新
-@RefreshScope
+//@RefreshScope  // 当配置中心信息更改时，自动将新的配置更新
 public class HelloController {
 
     @Value("${neo.hello}")
     private String hello;
+
 
     @RequestMapping("/hello")
     private String hello(){
