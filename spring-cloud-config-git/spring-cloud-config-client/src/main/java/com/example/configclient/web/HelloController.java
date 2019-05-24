@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-//@RefreshScope  // 当配置中心信息更改时，自动将新的配置更新
+@RefreshScope  // 当配置中心信息更改时，自动将新的配置更新
 public class HelloController {
 
     @Value("${neo.hello}")
